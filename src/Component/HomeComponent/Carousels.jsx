@@ -3,7 +3,7 @@ import "../../style/Home/carousels.css";
 import Carousel from "react-bootstrap/Carousel";
 import firstSlide from "../../assets/Home/Hero/first slide.jpeg";
 import secondSlide from "../../assets/Home/Hero/Six slide.jpg";
-import thirdSlide from "../../assets/Home/Hero/fifth slide.webp";
+import thirdSlide from "../../assets/Home/Hero/fifth Slide.webp";
 import forthSlide from "../../assets/Home/Hero/forth slide.jpeg";
 import { items } from "../../mockData/data";
 import CartContext from "../../Context/CartContext";
