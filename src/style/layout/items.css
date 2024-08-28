@@ -1,0 +1,12 @@
+.sytle-items{
+    width: 9rem;
+    padding: 16px 1rem;
+}
+
+.items-Link{
+    text-decoration: none;
+    color: black;
+}
+.items-Link:hover{
+    color: #F7E0CE;
+}

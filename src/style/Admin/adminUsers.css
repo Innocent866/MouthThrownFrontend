@@ -1,0 +1,21 @@
+.adminuser-table-div {
+    background-color: #F7E0CE;
+    padding: 2rem;
+}
+
+
+
+.adminuser-table th,
+.adminuser-table td {
+    padding: 0 25px;
+    border: 1px solid hsl(24, 76%, 65%);
+}
+
+/* Style specific rows */
+.adminuser-table tr:nth-child(even) {
+    background-color: hsl(24, 76%, 85%);
+}
+
+.adminuser-table tr:nth-child(odd) {
+    background-color: hsl(24, 76%, 85%);
+}

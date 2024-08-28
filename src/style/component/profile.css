@@ -1,0 +1,31 @@
+.profile-list-div{
+    position: relative;
+    z-index: 2;
+}
+
+.profile-list{
+    position: absolute;
+    right: 0;
+    background-color: #F7E0CE;
+}
+.profile-list li:hover{
+    background-color: #EA9962;
+    color: white;
+}
+
+@media screen and (min-width: 760px) {
+    .profile-list{
+        position: absolute;
+        right: 50px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .profile-list{
+        right: 80px;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .profile-list{
+        right: 640px;
+    }
+}

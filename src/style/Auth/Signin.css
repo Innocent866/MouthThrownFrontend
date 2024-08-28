@@ -1,0 +1,67 @@
+.signin-color{
+    background-color: #ffc7a2;
+    height: 100vh;
+}
+
+.signin-input-div{
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.signin-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #EA9962;
+    outline: none;
+    background-color: #f6be99;
+    padding: 0 5px;
+}
+
+.signin-label{
+    position: absolute;
+    left: 10px;
+    transition: all 1s;
+}
+
+.signin-input:focus ~ .signin-label,
+.signin-input:valid ~ .signin-label{
+    top: -20px;
+    color: #EA9962;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    border: 1px solid #EA9962;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  @media screen and (min-width:1024px) {
+    .signin-main-div{
+        background-color: #f6be99;
+    }
+
+    .signin-form{
+        width: 50%;
+    }
+
+    .signin-content{
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        width: 50%;
+    }
+    .signin-content h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 20px;
+        text-align: center;
+    }
+    .signin-content p{
+        padding: 20px;
+        text-align: center;
+    }
+  }
+ 

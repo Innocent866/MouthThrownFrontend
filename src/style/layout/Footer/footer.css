@@ -1,0 +1,9 @@
+.footer-logo{
+    width: 20rem;
+}
+
+@media screen and (min-width:760px) {
+    .footer-logo{
+        width: 30rem;
+    }
+}

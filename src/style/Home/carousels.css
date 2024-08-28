@@ -1,0 +1,39 @@
+.slide-div{
+    width: 100%;
+    height: 40vh;
+}
+
+.main-Slide{
+    width: 100%;
+    height: 100%;
+}
+
+.feature{
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    padding: 1rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.feature-div-image{
+    width: 80vw;
+    height: 40vh;
+}
+.feature-div:hover{
+    box-shadow: 1px 5px 5px 5px rgb(192, 192, 192);
+}
+@media screen and (min-width: 760px) {
+    .feature-div-image{
+        width: 40vw;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .feature-div-image{
+        width: 20vw;
+    }
+    .slide-div{
+        height: 80vh;
+    }
+}
