@@ -2,7 +2,7 @@ import img1 from "../assets/Home/Hero/first slide.jpeg"
 import img2 from "../assets/Home/Hero/second slide.jpeg"
 import img3 from "../assets/Home/Hero/third slide.jpeg"
 import img4 from "../assets/Home/Hero/forth slide.jpeg"
-import img5 from "../assets/Home/Hero/fifth slide.webp"
+import img5 from "../assets/Home/Hero/fifth Slide.webp"
 import img6 from "../assets/Home/Hero/Six slide.jpg"
 
 export const items = [
