@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../style/Auth/Signup.css";
 import { LiaFileUploadSolid } from "react-icons/lia";
 import SignupImage from "../assets/Home/Hero/Mouththrone.jpg";
-import SignupImage from "../assets/Home/Hero/";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
