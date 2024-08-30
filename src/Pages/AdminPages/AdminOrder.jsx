@@ -54,6 +54,7 @@ const AdminOrder = () => {
                   <th>Lastname</th>
                   <th>Email</th>
                   <th>Phonenumber</th>
+                  <th>DateOrdered</th>
                   <th>Info</th>
                 </tr>
               </thead>
@@ -64,6 +65,7 @@ const AdminOrder = () => {
                     <td>{item.recipient.lastname}</td>
                     <td>{item.recipient.email}</td>
                     <td>{item.recipient.phonenumber}</td>
+                    <td>{item.createdAt.slice(0,10)}</td>
                     <td className="d-flex gap-3 p-2">
                       <Link to={`/admin/orders/address/${item._id}`}>
                         <button className="btn d-flex align-items-center gap-3 btn-primary p-2">

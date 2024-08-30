@@ -20,7 +20,7 @@ const AdminOrderAddress = () => {
           },
         }
       );
-      console.log(res.data);
+      console.log(res);
       setData(res.data); // Update state with the response data
     } catch (error) {
       console.log(error);

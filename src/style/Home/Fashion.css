@@ -1,0 +1,118 @@
+.Fashion-watch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px; /* Replace 'auto' with a specific value */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.Fashion-watch-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Uncomment to center content vertically */
+    align-items: center; /* Add this to center items horizontally */
+    text-align: center; /* Centers text content */
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.fashion-watch-image {
+    width: 130px; /* Make the container responsive */
+    height: 100%;
+}
+
+.fashion-watch-image img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Keeps the aspect ratio of the image */
+    border-radius: 8px; /* Optional: add some rounded corners */
+}
+
+/* Css fashion style for men */
+.Fashion-men {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px; /* Replace 'auto' with a specific value */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.Fashion-men-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Uncomment to center content vertically */
+    align-items: center; /* Add this to center items horizontally */
+    text-align: center; /* Centers text content */
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.fashion-men-image {
+    width: 130px; /* Make the container responsive */
+    height: 100%;
+}
+
+.fashion-men-image img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Keeps the aspect ratio of the image */
+    border-radius: 8px; /* Optional: add some rounded corners */
+}
+
+/* Css fashion style for women */
+.Fashion-women {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px; /* Replace 'auto' with a specific value */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.Fashion-women-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Uncomment to center content vertically */
+    align-items: center; /* Add this to center items horizontally */
+    text-align: center; /* Centers text content */
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.fashion-women-image {
+    width: 130px; /* Make the container responsive */
+    height: 100%;
+}
+
+.fashion-women-image img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Keeps the aspect ratio of the image */
+    border-radius: 8px; /* Optional: add some rounded corners */
+}
+
+/* Css fashion style for shoes */
+.Fashion-shoe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px; /* Replace 'auto' with a specific value */
+    gap: 20px; /* Add some space between grid items */
+}
+
+.Fashion-shoe-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Uncomment to center content vertically */
+    align-items: center; /* Add this to center items horizontally */
+    text-align: center; /* Centers text content */
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.fashion-shoe-image {
+    width: 130px; /* Make the container responsive */
+    height: 100%;
+}
+
+.fashion-shoe-image img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Keeps the aspect ratio of the image */
+    border-radius: 8px; /* Optional: add some rounded corners */
+}

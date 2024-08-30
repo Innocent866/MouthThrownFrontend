@@ -1,9 +1,10 @@
 .Nav-Logo{
-    width: 7rem;
+    width: 10rem;
 }
 
 .nav-list{
     display: flex;
+    align-items: center;
     gap: 5px;
     list-style: none;
     cursor: pointer;

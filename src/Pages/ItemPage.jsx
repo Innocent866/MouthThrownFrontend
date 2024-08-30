@@ -63,7 +63,7 @@ useEffect(()=>{
               </button>
             </div>
           );
-        })}
+        }).slice(0,44)}
       </div>
     </div>
   );

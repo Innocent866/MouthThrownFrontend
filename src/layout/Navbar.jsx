@@ -29,12 +29,12 @@ const Navbar = () => {
             {open && <Search/>}
           </div>
 
-            <ul className="d-flex align-items-center gap-2 gap-lg-4 mt-3">
+            <ul className="d-flex align-items-center gap-4 gap-lg-4 mt-3">
               <li
                 className="nav-list"
                 onClick={() => handleSearch()}
               >
-                <FaSearch className="fs-4" />
+                <FaSearch className="fs-1" />
                 <span className={open ? "d-none" : "d-none d-lg-block d-md-block"}>
                   Search
                 </span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                 className="nav-list"
                 onClick={() => handleShowProfile()}
               >
-                <CgProfile className="fs-4" />
+                <CgProfile className="fs-1" />
                 <span className={open ? "d-none" : "d-none d-lg-block d-md-block"}>
                   Profile
                 </span>
@@ -54,11 +54,11 @@ const Navbar = () => {
                 <li
                   className="nav-list"
                 >
-                  <MdOutlineShoppingCart className="fs-4 fs-lg-2" />
+                  <MdOutlineShoppingCart className="fs-1 fs-lg-2" />
                   <span className={open ? "d-none" : "d-none d-lg-block d-md-block"}>
                     Cart
                   </span>
-                  <p className="rounded-4 d-flex justify-content-center align-items-center" style={{position:"absolute",width:"17px", height:"17px", left:"4px", top:"-8px", fontSize:"15px", fontWeight:"5px", backgroundColor:"black", color:"#F7E0CE"}}>{cart.length}</p>
+                  <p className="rounded-4 d-flex justify-content-center align-items-center fs-6 fw-light" style={{position:"absolute",width:"20px", height:"20px", left:"10px", top:"-8px", backgroundColor:"black", color:"#F7E0CE"}}>{cart.length}</p>
                 </li>
                 
               </Link>

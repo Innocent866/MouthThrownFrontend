@@ -9,7 +9,7 @@ const Maquee = () => {
 
   const marqueeMessage = "YOU ORDER WE DELIVER"
   return (
-    <div className='bg' style={{backgroundColor:"#EA9962", color:"#F7E0CE"}}>
+    <div className='bg d-none' style={{backgroundColor:"#EA9962", color:"#F7E0CE"}}>
       <Marquee speed={100}>
         <div className='d-flex gap-5'>
         <div className='d-flex gap-3 align-items-center'>
