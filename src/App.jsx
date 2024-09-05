@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./layout/Footer";
 import NavBar from "./layout/Navbar";
 import HomePage from "./Pages/HomePage";
-import SingleProductPage from "./Pages/SingleProductPage";
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
 import Layout from "./layout/Layout";
@@ -30,6 +29,7 @@ import AdminOrder from "./Pages/AdminPages/AdminOrder";
 import AdminProductAdd from "./Pages/AdminPages/AdminProductAdd";
 import AdminOrderAddress from "./Pages/AdminPages/AdminOrderAddress";
 import AdminOrderUserOrder from "./Pages/AdminPages/AdminOrderUserOrder";
+import SinglePage from "./Pages/SinglePage";
 
 const App = () => {
   return (
@@ -47,9 +47,9 @@ const App = () => {
               <Route element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/products" element={<ProductPage />} />
-                <Route path="/product/:id" element={<SingleProductPage />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="/item" element={<ItemPage />} />
+                <Route path="/single/:id" element={<SinglePage />} />
                 <Route element={<Private />}>
                   <Route path="/Order" element={<Order/>}/>
                 </Route>

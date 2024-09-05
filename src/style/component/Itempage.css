@@ -1,0 +1,18 @@
+.cart-item {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .cart-item-image img {
+    border-radius: 0.5rem;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-details h4 {
+    margin-bottom: 1rem;
+  }
+  

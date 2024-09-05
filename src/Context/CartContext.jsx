@@ -10,6 +10,9 @@ export const CartProvider = ({children}) => {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
   // let quantity = 1
+  const quantity = 1;
+
+  // let quantity = 1
   const handleAddToCart = (product) => {
     const productSelected = cart.find(
       (singleCart) => singleCart.id === product.id
@@ -85,7 +88,8 @@ function handleDecrease(product) {
     handleIncrease,
     handleDecrease,
     totalPrice,
-    removeItem
+    removeItem,
+    quantity
     }}>
         {children}
 

@@ -7,7 +7,7 @@ import { RiDeleteBin7Fill } from "react-icons/ri";
 import MyVerticallyCenteredModal from "./ReciepientAuthModal.jsx";
 import ReciepientAddressModal from "./ReciepientAddressModal.jsx";
 import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
+import { ToastContainer, toast } from 'react-toastify';
 
 const CheckOut = () => {
   const [show, setShow] = useState(false);
@@ -26,9 +26,9 @@ const CheckOut = () => {
   }, []);
 
   return (
-    <main className="my-5 row justify-content-between">
-      <section className="col-lg-6 border border-3 rounded p-4 h-50">
-        <h2>Review and place order</h2>
+    <main className="py-5 row justify-content-between">
+      <section className="col-lg-6 rounded p-4 h-50" style={{ border: "3px solid #EA9962"}}>
+        <h2>Enter your details and place order</h2>
         <p className="mt-4">
           Review / Add address and fulfill payments to complete your purchase
         </p>
@@ -66,12 +66,13 @@ const CheckOut = () => {
           />
           <hr />
           {recipient && address ? (
-            <Link className="btn btn-success w-100 text-decoration-none" to="/Order">
+            <Link className="btn w-100 text-decoration-none" style={{backgroundColor:"#EA9962"}} to="/Order">
               Place Your Order
             </Link>
           ) : (
             <Link
-              className="btn btn-success w-100 text-decoration-none"
+              className="btn w-100 text-decoration-none"
+              style={{backgroundColor:"#EA9962"}}
               onClick={() => toast.error('Please fill in address and recipient details first.')}
             >
               Place Your Order
@@ -79,22 +80,34 @@ const CheckOut = () => {
           )}
         </div>
       </section>
-      <section className="col-lg-5 border border-3 rounded p-4">
+      <section className="col-lg-5 rounded p-4" style={{ border: "3px solid #EA9962"}}>
         <h5>Your order from</h5>
         {cart.length === 0 ? (
           <h2>No items</h2>
         ) : (
           cart.map((cartItem) => {
-            const { quantity, title, price, id, image } = cartItem;
+            const { quantity, title, price, id, images } = cartItem;
+    
             return (
               <div
                 className="row mb-5 justify-content-between align-items-center"
                 key={id}
               >
                 <div className="col-5">
-                  <img src={image} alt={title} className="w-100" />
-                  <h1 className="fs-3 text-danger"> {title}... </h1>
-                  <div className="bg-secondary w-75 d-flex justify-content-between align-items-center">
+                  <div style={{ width: "100%", height: "20vh" }}>
+                    <img
+                      src={images[0]} // Ensure images is an array
+                      alt={title}
+                      width="100%"
+                      height="100%"
+                      style={{ objectFit: "cover" }} // Ensure image covers the container
+                    />
+                  </div>
+                  <h1 className="fs-3 text-danger">{title}</h1>
+                  <div
+                    className="w-100 d-flex justify-content-between align-items-center"
+                    style={{ backgroundColor: "#EA9962", padding: "0.5rem" }}
+                  >
                     <button
                       className="btn btn-lg"
                       onClick={() => handleIncrease(cartItem)}
@@ -111,7 +124,11 @@ const CheckOut = () => {
                   </div>
                 </div>
                 <div className="col-4 d-flex gap-3 align-items-center">
-                  <span role="button" onClick={() => removeItem(id)}>
+                  <span
+                    role="button"
+                    onClick={() => removeItem(id)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <RiDeleteBin7Fill />
                   </span>
                   <p># {price}</p>

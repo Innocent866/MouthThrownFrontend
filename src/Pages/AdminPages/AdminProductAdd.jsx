@@ -104,8 +104,16 @@ const AdminProductAdd = () => {
               required
             >
               <option value="" disabled>-----</option>
-              <option value="Electronics">Electronics</option>
+              <option value="Appliances">Appliances</option>
+              <option value="computer">computer</option>
+              <option value="Phone">Phone</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Gadget">Gadget</option>
+              <option value="Baby Product">Baby Product</option>
               <option value="Books">Books</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Kechine Items">Kechine Items</option>
+              <option value="Gaming">Gaming</option>
               {/* Add more options as needed */}
             </select>
             <label className="signup-label">Category</label>

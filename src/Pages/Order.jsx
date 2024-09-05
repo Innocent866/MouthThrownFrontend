@@ -44,11 +44,13 @@ const Order = () => {
   };
  
   return (
-    <>
-      <main className="container my-5 border">
-        <h2>Order page</h2>
+    <div className="py-5" style={{ backgroundColor: "#F7E0CE"}}>
+      
+      <main className="container p-3"  style={{ border: "3px solid #EA9962"}}>
+        
         {cart.length > 0 ? (
           <>
+          <h2 className="text-center">Order page</h2>
             {cart.map((cartItx) => {
               const {
                 _id,
@@ -75,30 +77,30 @@ const Order = () => {
             <h2> {totalPrice} </h2>
             <hr />
             {/* recipient */}
-            {recipient === null && address === null ?   <div> <h2> create recipient details and address details first to place an order </h2> </div>  : <div>  <h2> Recipient details </h2>
+            {recipient === null && address === null ?   <div> <h2> create recipient details and address details first to place an order </h2> </div>  : <div>  <h2 className="text-center"> Recipient details </h2>
             <p>email: {recipient.email}</p>
             <p>firstname: {recipient.firstname} </p>
             <p>lastname: {recipient.lastname}</p>
             <p>phonenumber: {recipient.phonenumber}</p>
             <hr />
             {/* address */}
-            <h2> Recipient address </h2>
+            <h2 className="text-center"> Recipient address </h2>
             <p>city: {address.city}</p>
             <p>street: {address.street} </p>
             <p>housenumber: {address.housenumber}</p>
             {/* <p>phonenumber: {recipient.phonenumber}</p> */}
-            <button className="btn btn-success w-100" onClick={order}>
+            <button className="btn w-100" style={{backgroundColor:"#EA9962"}} onClick={order}>
               place order
             </button> </div>   }
            
           </>
         ) : (
           <>
-            <h2>no order </h2>
+            <h2 className="text-center">no order </h2>
           </>
         )}
       </main>
-    </>
+    </div>
   );
 };
 

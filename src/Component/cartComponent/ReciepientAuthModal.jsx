@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import toast from "react-hot-toast";
+import { ToastContainer, toast } from 'react-toastify';
 import { useState } from "react";
 
 function MyVerticallyCenteredModal(props) {
@@ -50,6 +50,7 @@ const [recipient,setRecipient] = useState({
       localStorage.setItem('recipient', JSON.stringify(recipient))
       console.log(recipient);
       toast.success('Reciepient added successfully')
+      props.onHide()
     }
     try {
         

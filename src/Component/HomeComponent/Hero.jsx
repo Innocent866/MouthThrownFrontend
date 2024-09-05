@@ -8,8 +8,7 @@ const Hero = () => {
   return (
     <div>
       <Carousels/>
-      <HomeItems/>
-      <Appliances/>
+      
     </div>
   )
 }

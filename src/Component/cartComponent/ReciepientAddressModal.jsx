@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import toast from "react-hot-toast";
+import { ToastContainer, toast } from 'react-toastify';
 import { useState } from "react";
 
 function ReciepientAddressModal(props) {
@@ -47,6 +47,7 @@ function ReciepientAddressModal(props) {
       localStorage.setItem("address", JSON.stringify(address));
       console.log(address);
       toast.success("address added successfully");
+      props.onHide()
     }
     try {
     } catch (error) {}

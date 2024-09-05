@@ -1,23 +1,28 @@
-.Nav-Logo{
-    width: 10rem;
+.nav-profile-drop{
+  position: absolute;
+  /* z-index: 2; */
+  
 }
 
-.nav-list{
+.Nav-Logo {
+    width: 10rem;
+  }
+  
+  .nav-list {
     display: flex;
     align-items: center;
     gap: 5px;
     list-style: none;
     cursor: pointer;
     position: relative;
-}
-.nav-list:hover{
-    color: rgb(208, 208, 208);
-}
-.nav-list{
     text-decoration: none;
-}
-
-.nav-search-bar-mobile{
+  }
+  
+  .nav-list:hover {
+    color: rgb(208, 208, 208);
+  }
+  
+  .nav-search-bar-mobile {
     width: 100%;
     padding: 10px;
     border: none;
@@ -25,51 +30,58 @@
     border-radius: 10px;
     background-color: #dbe8b5;
     margin-bottom: 10px;
-}
-.nav-search-bar-mobile:focus{
+  }
+  
+  .nav-search-bar-mobile:focus {
     background-color: white;
-}
-.nav-search-bar-mobile::placeholder{
+  }
+  
+  .nav-search-bar-mobile::placeholder {
     font-weight: bold;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.nav-search-bar-tablet{
+  }
+  
+  .nav-search-bar-tablet {
     display: none;
-}
-
-.nav-search{
+  }
+  
+  .nav-search {
     display: none;
-}
-
-.nav-profile:hover .profile-list{
+  }
+  
+  .nav-profile:hover .profile-list {
     display: block;
-    padding: 1rem 0 0 0;
-}
-
-@media screen and (min-width: 760px) {
-    .Nav-Logo{
-        width: 20rem;
+    padding: 1rem 0;
+  }
+  
+  @media screen and (min-width: 760px) {
+    .Nav-Logo {
+      width: 20rem;
     }
-    .nav-search-bar-mobile{
-        display: none;
+  
+    .nav-search-bar-mobile {
+      display: none;
     }
-    .nav-search-bar-tablet{
-        display: block;
-        width: 50%;
-        padding: 10px;
-        border: none;
-        outline: none;
-        border-radius: 10px;
-        background-color: #dbe8b5;
-        /* margin-bottom: 10px; */
+  
+    .nav-search-bar-tablet {
+      display: block;
+      width: 50%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      background-color: #dbe8b5;
     }
-    .nav-search-bar-tablet:focus{
-        background-color: white;
+  
+    .nav-search-bar-tablet:focus {
+      background-color: white;
     }
-    .nav-search-bar-tablet::placeholder{
-        font-weight: bold;
-        font-size: large;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    .nav-search-bar-tablet::placeholder {
+      font-weight: bold;
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-}
+  }
+  
